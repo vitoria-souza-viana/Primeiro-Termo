@@ -27,31 +27,32 @@
 # Tratamento de Erros
 # Revisão do código
 
-print("Bem-vindo ao shopping Pátio!")
-print("Escolha uma das opções")
-print("1- Ticket \n 2- TAG \n 3- Interfone")
-metodoentrada= input("Ticket / Tag / Interfone")
-
-if metodoentrada == "Ticket": 
-    print("Bem-Vindo ao shopping")
-horaentrada= int(input("Digite a hora de entrada"))
-valorestacionamento= float(input("Digite o valor a cobrar"))
-horasaida= float(input("Digite a hora da saida"))
-totalpermanencia= horasaida - horaentrada
-print(f"Seu tempo de permanencia {totalpermanencia} em horas")
-totalestacionamento= totalpermanencia * valorestacionamento
-print(f"O valor total a ser cobrado foi de R${totalestacionamento:.2f }")
-print("Devolver o ticket")
-
+while True:
+  print("Bem-vindo ao shopping Pátio!")
+  print("Escolha uma das opções")
+  print("1- Ticket \n 2- TAG \n 3- Interfone")
+  metodoentrada= input("Ticket / Tag / Interfone")
+  if metodoentrada == "Ticket": 
+   print("Bem-Vindo ao shopping")
+  horaentrada= int(input("Digite a hora de entrada"))
+  valorestacionamento= float(input("Digite o valor a cobrar"))
+  horasaida= float(input("Digite a hora da saida"))
+  totalpermanencia= horasaida - horaentrada
+  print(f"Seu tempo de permanencia {totalpermanencia} em horas")
+  totalestacionamento= totalpermanencia * valorestacionamento
+  print(f"O valor total a ser cobrado foi de R${totalestacionamento}")
+  print("Devolver o ticket")
+  break
 if metodoentrada=="Tag": 
     print("Bem vindo ao shopping")
     print("Sua parmanencia no shopping será cobrado na sua fatura")
     print("obrigado pela visita!")
-
+    break
 elif metodoentrada == "Interfone":
     print("Bem-vindo ao shopping")
     print("Liberando acesso pelo interfone")
     print("Sua saída deverá ser feita também pelo interfone")
-
+    break
 else: 
     print("Obrigada pela visita!")
+    break
