@@ -19,11 +19,11 @@
 # print("Seja bem-vindo (a):", nome ,"!")
 
 # 3. Falta de Espaço
-# numero = 10
-# if numero > 5:
-# print("O número é maior que cinco.")
-# else:
-# print("O número é menor ou igual a cinco.")
+numero =int(input("Digite seu numero "))
+if numero > 5:
+    print("O número é maior que cinco.")
+else:
+    print("O número é menor ou igual a cinco.")
 
 #Corrigido
 # numero= 10
