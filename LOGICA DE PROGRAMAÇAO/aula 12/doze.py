@@ -24,7 +24,8 @@ btn_clique_pagina = tk.Button(janela, text="Clique aqui", font=("Arial", 14), bg
 btn_fechar_janela = tk.Button(janela, text="Fechar", font=("Italico", 14), bg="#e74c3c", fg="white", command=janela.destroy )
 # 4. Posicionar os componentes na janela 
 lbl_titulo_pagina.pack(pady=20) #pady adiciona um espaçamento vertical
-btn_clique_pagina.pack(pady=10)
+btn_clique_pagina.pack(pady=15)
+btn_fechar_janela.pack(pady=10)
 
 
 
