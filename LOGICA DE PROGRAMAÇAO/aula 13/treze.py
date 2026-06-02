@@ -9,7 +9,7 @@ def janela_bemvvindo():   #serve para buscar informação na caixa de texto.
     if nome == "":
         messagebox.showwarning("Aviso" , "Digite seu nome :)")
     else:
-        messagebox.showinfo("bem vindo" , f"Olá usuario, {nome} - seja bem-vindo a nosso sistema")
+        messagebox.showinfo("bem vindo" , f"Olá , {nome} {idade} - seja bem-vindo a nosso sistema")
 
     if idade == "":
         messagebox.showwarning("Digite sua idade")
